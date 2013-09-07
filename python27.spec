@@ -86,6 +86,8 @@ Source1: %{name}-%{version}-docs-html.tar.bz2
 BuildRoot: %{_tmppath}/%{name}-%{version}-root
 BuildRequires: gcc make expat-devel db4-devel gdbm-devel sqlite-devel readline-devel zlib-devel bzip2-devel openssl-devel
 AutoReq: no
+Provides: python-abi = %{libvers}
+Provides: python(abi) = %{libvers}
 Prefix: %{__prefix}
 Vendor: Sean Reifschneider <jafo-rpms@tummy.com>
 Packager: Nathan Milford <nathan@milford.io>
